@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>cosmos element fixture</title>
+<!-- Element page: a placeholder and the main image stacked in one role=button box. data-el is for the smoke only.
+     The site's own Save button sits over the main image's bottom-left corner, where the extension's button appears. -->
+<style>
+  body { margin: 8px; }
+  .media { position: relative; width: 480px; height: 360px; }
+  .media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+  [data-testid="element-tile-save-btn"] { position: absolute; left: 0; bottom: 0; width: 64px; height: 64px; font: 12px sans-serif; cursor: pointer; }
+</style>
+<div class="media" role="button">
+  <img src="https://cdn.cosmos.so/7d1c0000-0000-4000-8000-000000000003?format=webp&amp;w=400" alt="">
+  <img data-testid="element-image-img" data-el="1003" src="https://cdn.cosmos.so/7d1c0000-0000-4000-8000-000000000003?format=webp" alt="ochre field">
+  <button type="button" data-testid="element-tile-save-btn" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button>
+</div>
+<a data-testid="username" href="/fixture-author">fixture-author</a>

@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>cosmos feed fixture</title>
+<!-- Tiles shaped like the recorded markup: no links, no srcset. data-el is for the smoke only.
+     The site's own Save button sits over the image's bottom-left corner, exactly where the extension's button appears and the smoke clicks:
+     if the extension's button is missing, the click lands here and nativeSaves goes up. -->
+<style>
+  body { margin: 8px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 300px); gap: 12px; align-items: start; }
+  button { all: unset; display: block; cursor: pointer; }
+  img { display: block; width: 300px; height: 225px; }
+  [data-testid="element-tile"] { position: relative; }
+  [data-testid="element-tile-save-btn"] { position: absolute; left: 0; bottom: 0; width: 64px; height: 64px; font: 12px sans-serif; }
+</style>
+<div class="grid">
+  <div data-testid="element-tile"><div data-testid="element-tile-content"><button type="button" data-testid="element-tile-link"><img data-testid="element-image-img" data-el="1001" src="https://cdn.cosmos.so/7d1c0000-0000-4000-8000-000000000001?format=webp&amp;w=400" alt="purple field"></button></div><button type="button" data-testid="element-tile-save-btn" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div>
+  <div data-testid="element-tile"><div data-testid="element-tile-content"><button type="button" data-testid="element-tile-link"><img data-testid="element-image-img" data-el="1002" src="https://cdn.cosmos.so/7d1c0000-0000-4000-8000-000000000002?format=webp&amp;w=400" alt="teal field"></button></div><button type="button" data-testid="element-tile-save-btn" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div>
+</div>

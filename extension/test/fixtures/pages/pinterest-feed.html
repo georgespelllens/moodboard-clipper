@@ -1,0 +1,26 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>pinterest feed fixture</title>
+<!-- Feed shaped like the recorded markup; data-pin is for the smoke only.
+     The site's own Save button sits over the image's bottom-left corner, exactly where the extension's button appears and the smoke clicks:
+     if the extension's button is missing, the click lands here and nativeSaves goes up. The 120 px card has none.
+     Pin 9001 carries its title the way the Russian interface does, «Страница пина «…»»: the smoke still expects the bare title.
+     Pin 9005 also has a text link under the card, to the same pin page: a right click on it gives the menu a linkUrl and no srcUrl.
+     It sits outside the pin div, so the feed button and the contextmenu listener know nothing about it. -->
+<style>
+  body { margin: 8px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 236px); gap: 12px; align-items: start; }
+  [data-test-id="pin"] { position: relative; }
+  [data-test-id="pin-better-save-button"] { position: absolute; left: 0; bottom: 0; width: 64px; height: 64px; cursor: pointer; }
+  img, video { display: block; width: 236px; height: 177px; }
+  .small img { width: 120px; height: 90px; }
+  .title { display: block; margin-top: 4px; font: 14px/20px sans-serif; }
+</style>
+<div class="grid">
+  <div data-grid-item="true" role="listitem"><div data-test-id="pin" data-test-pin-id="9001"><a href="/pin/9001/" aria-label="Страница пина «Fixture pin 9001»"><img data-pin="9001" src="https://i.pinimg.com/236x/0a/01/01/pin1.jpg" srcset="https://i.pinimg.com/236x/0a/01/01/pin1.jpg 1x, https://i.pinimg.com/474x/0a/01/01/pin1.jpg 2x, https://i.pinimg.com/736x/0a/01/01/pin1.jpg 3x, https://i.pinimg.com/originals/0a/01/01/pin1.jpg 4x" alt="red field"></a><button type="button" data-test-id="pin-better-save-button" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div></div>
+  <div data-grid-item="true" role="listitem"><div data-test-id="pin" data-test-pin-id="9002"><a href="/pin/9002/" aria-label="Fixture pin 9002"><img data-pin="9002" src="https://i.pinimg.com/1200x/0a/02/02/pin2.jpg" srcset="https://i.pinimg.com/736x/0a/02/02/pin2.jpg 736w, https://i.pinimg.com/1200x/0a/02/02/pin2.jpg 1152w" alt="green field"></a><button type="button" data-test-id="pin-better-save-button" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div></div>
+  <div data-grid-item="true" role="listitem"><div data-test-id="pin" data-test-pin-id="9003"><a href="/pin/9003/" aria-label="Fixture pin 9003"><img data-pin="9003" src="https://i.pinimg.com/236x/0a/03/03/pin3.jpg" srcset="https://i.pinimg.com/236x/0a/03/03/pin3.jpg 1x, https://i.pinimg.com/474x/0a/03/03/pin3.jpg 2x, https://i.pinimg.com/736x/0a/03/03/pin3.jpg 3x, https://i.pinimg.com/originals/0a/03/03/pin3.jpg 4x" alt="blue field"></a><button type="button" data-test-id="pin-better-save-button" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div></div>
+  <div data-grid-item="true" role="listitem"><div data-test-id="pin" data-test-pin-id="9004"><a href="/pin/9004/" aria-label="Fixture pin 9004"><video data-pin="9004" poster="https://i.pinimg.com/236x/0a/04/04/pin4.jpg" muted></video></a><button type="button" data-test-id="pin-better-save-button" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div></div>
+  <div data-grid-item="true" role="listitem"><div data-test-id="pin" data-test-pin-id="9005"><a href="/pin/9005/" aria-label="Fixture pin 9005"><img data-pin="9005" src="https://i.pinimg.com/236x/0a/05/05/pin5.jpg" srcset="https://i.pinimg.com/236x/0a/05/05/pin5.jpg 1x, https://i.pinimg.com/474x/0a/05/05/pin5.jpg 2x, https://i.pinimg.com/736x/0a/05/05/pin5.jpg 3x, https://i.pinimg.com/originals/0a/05/05/pin5.png 4x" alt="pink field"></a><button type="button" data-test-id="pin-better-save-button" onclick="document.body.dataset.nativeSaves=(+document.body.dataset.nativeSaves||0)+1">Save</button></div><a class="title" data-title-link="9005" href="/pin/9005/">Fixture pin 9005 title</a></div>
+  <div class="small" data-grid-item="true" role="listitem"><div data-test-id="pin" data-test-pin-id="9001"><a href="/pin/9001/" aria-label="Small fixture"><img data-pin="small" src="https://i.pinimg.com/236x/0a/01/01/pin1.jpg" srcset="https://i.pinimg.com/236x/0a/01/01/pin1.jpg 1x, https://i.pinimg.com/474x/0a/01/01/pin1.jpg 2x, https://i.pinimg.com/736x/0a/01/01/pin1.jpg 3x, https://i.pinimg.com/originals/0a/01/01/pin1.jpg 4x" alt="too small"></a></div></div>
+</div>

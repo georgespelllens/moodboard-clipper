@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <title data-i18n="popupTitle">Moodboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <section id="folder">
+    <p id="where"><span id="whereText"></span> <a href="#" id="pick"></a></p>
+    <button id="connect" type="button" hidden data-i18n="connectFolder">Connect folder</button>
+    <p id="folderHint" hidden></p>
+  </section>
+
+  <label for="board" data-i18n="boardLabel">Board</label>
+  <select id="board"></select>
+  <p id="count"></p>
+
+  <form id="create">
+    <input id="name" placeholder="New board" autocomplete="off" aria-label="New board name"
+      data-i18n-placeholder="newBoardPlaceholder" data-i18n-aria-label="newBoardAria">
+    <button data-i18n="create">Create</button>
+  </form>
+  <p id="normalized" hidden></p>
+
+  <h2 data-i18n="recentTitle">Recent saves</h2>
+  <ol id="recent"></ol>
+
+  <script src="lib/board.js"></script>
+  <script src="lib/folder.js"></script>
+  <script src="lib/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

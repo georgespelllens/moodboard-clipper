@@ -1,0 +1,6 @@
+.DS_Store
+dist/
+extension/test/smoke/out/
+video/renders/
+video/node_modules/
+.claude/

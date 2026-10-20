@@ -1,0 +1,40 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>overlay fixture</title>
+<!-- findImageUnderLink in a real page, everything inside the viewport. First row:
+     1 the Behance shape: the image and, as its sibling, a transparent link that covers it (a right click hits the link),
+       plus a text caption link with the same address, which has no image under it and must not hide the picture;
+     2 a link that wraps its image;
+     3 a text link with no image under it.
+     Second row: two cards whose links both go to "#" (the same address, so the clicked card cannot be told from its twin):
+     the answer must be "many", not the bigger or the first image. -->
+<style>
+  body { margin: 0; }
+  .item { position: absolute; top: 20px; width: 200px; height: 150px; }
+  #one { left: 20px; }
+  #two { left: 240px; }
+  #three { left: 460px; }
+  .row2 { top: 220px; }
+  #four { left: 20px; }
+  #five { left: 240px; }
+  .item img { display: block; width: 200px; height: 150px; }
+  .cover { position: absolute; inset: 0; background: transparent; }
+  .caption { position: absolute; top: 155px; left: 0; font: 14px/20px sans-serif; }
+</style>
+<div class="item" id="one">
+  <img src="https://fixture.test/img/web-1.png" width="200" height="150" alt="behance shape">
+  <a class="cover" href="https://fixture.test/gallery/1" aria-label="project one"></a>
+  <a class="caption" href="https://fixture.test/gallery/1">project one</a>
+</div>
+<div class="item" id="two">
+  <a href="https://fixture.test/gallery/2"><img src="https://fixture.test/img/web-1.png" width="200" height="150" alt="wrapped"></a>
+</div>
+<div class="item" id="three">
+  <a href="https://fixture.test/gallery/3">only words</a>
+</div>
+<div class="item row2" id="four">
+  <a href="#"><img src="https://fixture.test/img/web-1.png" width="200" height="150" alt="first hash card"></a>
+</div>
+<div class="item row2" id="five">
+  <a href="#"><img src="https://fixture.test/img/noext" width="200" height="150" alt="second hash card"></a>
+</div>

@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Step 3 picture: the macOS folder sheet Chrome opens after "Load unpacked". It cannot be captured headless,
+     so it is drawn here: the location bar is Documents, the folder moodboard-clipper-extension is selected, and the
+     second row is a file that is not a folder, so it is dimmed. capture.mjs renders it at 168×105 (2x) for ?lang=en and ?lang=ru. -->
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 168px; height: 105px; overflow: hidden; }
+  body { font: 11px/1 -apple-system, "Helvetica Neue", sans-serif; color: #1d1d1f; background: #ececec; }
+  .bar { height: 22px; display: flex; align-items: center; justify-content: center; gap: 4px;
+         border-bottom: 1px solid #d4d4d4; font-weight: 600; }
+  .bar::after { content: "⌃⌄"; font-size: 7px; letter-spacing: -1px; color: #6e6e73; writing-mode: vertical-lr; }
+  .list { height: 52px; margin: 0 6px; background: #fff; border: 1px solid #d4d4d4; border-top: 0; padding: 3px 0; }
+  .row { height: 18px; display: flex; align-items: center; gap: 5px; padding: 0 6px; font-size: 9px; }
+  .row.on { background: #0063e1; color: #fff; border-radius: 4px; margin: 0 2px; padding: 0 4px; }
+  .row.off { color: #b0b0b5; }
+  .name { white-space: nowrap; }
+  .folder, .file { flex: none; }
+  .folder { width: 14px; height: 10px; border-radius: 2px; background: #5fb2f5; position: relative; }
+  .folder::before { content: ""; position: absolute; left: 0; top: -2px; width: 6px; height: 3px; border-radius: 1px 1px 0 0; background: #5fb2f5; }
+  .file { width: 10px; height: 12px; border-radius: 1px; background: #e4e4e8; margin: 0 2px; }
+  .buttons { height: 30px; display: flex; align-items: center; justify-content: flex-end; gap: 6px; padding: 0 8px; }
+  .button { height: 18px; padding: 0 9px; display: flex; align-items: center; border-radius: 5px;
+            background: #fff; box-shadow: 0 0 0 0.5px #c4c4c8, 0 1px 1px rgba(0,0,0,.08); }
+  .button.go { background: #0a7aff; color: #fff; box-shadow: none; outline: 2px solid #a99efc; outline-offset: 2px; }
+</style>
+<div class="bar" id="place">Documents</div>
+<div class="list">
+  <div class="row on"><span class="folder"></span><span class="name">moodboard-clipper-extension</span></div>
+  <div class="row off"><span class="file"></span><span class="name" id="note">notes.txt</span></div>
+</div>
+<div class="buttons"><span class="button" id="cancel">Cancel</span><span class="button go" id="select">Select</span></div>
+<script>
+  const all = {
+    en: { place: 'Documents', note: 'notes.txt', cancel: 'Cancel', select: 'Select' },
+    ru: { place: 'Документы', note: 'заметки.txt', cancel: 'Отменить', select: 'Выбрать' },
+  };
+  const texts = all[new URLSearchParams(location.search).get('lang')] ?? all.en;
+  for (const id of Object.keys(texts)) document.getElementById(id).textContent = texts[id];
+</script>
