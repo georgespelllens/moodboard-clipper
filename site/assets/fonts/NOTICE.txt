@@ -1,0 +1,3 @@
+spelllens-9.0.woff2 is the SPELLLENS typeface, used for the headings of the site.
+It is not covered by the MIT license of this repository: all rights reserved.
+onest-variable.woff2 is Onest, under the SIL Open Font License 1.1 (OFL.txt).

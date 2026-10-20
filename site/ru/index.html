@@ -5,148 +5,177 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moodboard Clipper by SPELLLENS — референсы в папку на компьютере</title>
 <meta name="description" content="Расширение для Chrome: сохраняет картинки из Pinterest, Cosmos и с любых страниц в папку на компьютере, с карточкой к каждой картинке. Бесплатно, код открыт.">
-<link rel="canonical" href="https://georgespelllens.github.io/moodboard-clipper/ru/">
-<link rel="alternate" hreflang="en" href="https://georgespelllens.github.io/moodboard-clipper/">
-<link rel="alternate" hreflang="ru" href="https://georgespelllens.github.io/moodboard-clipper/ru/">
+<link rel="canonical" href="https://spelllens.ru/moodboard-clipper/ru/">
+<link rel="alternate" hreflang="en" href="https://spelllens.ru/moodboard-clipper/">
+<link rel="alternate" hreflang="ru" href="https://spelllens.ru/moodboard-clipper/ru/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Moodboard Clipper by SPELLLENS">
 <meta property="og:description" content="Сохраняйте картинки из Pinterest, Cosmos и с любых страниц в папку на компьютере.">
-<meta property="og:url" content="https://georgespelllens.github.io/moodboard-clipper/ru/">
-<meta property="og:image" content="https://georgespelllens.github.io/moodboard-clipper/assets/media/cover.jpg">
+<meta property="og:url" content="https://spelllens.ru/moodboard-clipper/ru/">
+<meta property="og:image" content="https://spelllens.ru/moodboard-clipper/assets/media/cover.jpg">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../assets/media/favicon-32.png">
 <link rel="preload" href="../assets/fonts/onest-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/spelllens-9.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="top">
-  <header class="wrap bar">
-    <a class="brand" href="index.html"><img src="../assets/media/icon-128.png" alt="" width="36" height="36">Moodboard Clipper</a>
-    <nav>
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="28" fill="#fff"/><rect x="22" y="22" width="38" height="50" rx="7" fill="#000"/><rect x="22" y="78" width="38" height="28" rx="7" fill="#000" opacity=".3"/><rect x="68" y="22" width="38" height="30" rx="7" fill="#000" opacity=".3"/><rect x="68" y="58" width="38" height="48" rx="7" fill="#000"/><path d="M87 71v22M76 82h22" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+      <span>Moodboard Clipper</span>
+    </a>
+    <nav class="nav">
+      <a class="wide" href="#install">Установка</a>
       <a class="wide" href="#privacy">Приватность</a>
       <a class="wide" href="https://github.com/georgespelllens/moodboard-clipper">GitHub</a>
       <a href="../index.html" hreflang="en" lang="en">In English</a>
     </nav>
-  </header>
-  <div class="wrap hero">
-    <div>
-      <h1>Референсы — в папку на вашем компьютере</h1>
-      <p class="lead">Нажмите ＋ в Pinterest или Cosmos или кликните правой кнопкой по картинке на любой странице. Она ляжет в папку выбранной доски, в «Загрузках» или в вашей папке, с карточкой: откуда картинка.</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Скачать</a>
-        <a class="button secondary" href="#install">Как установить</a>
-      </div>
-      <p class="note">Бесплатно, код открыт. Работает в Chrome и других браузерах на Chromium — на Mac, Windows и Linux.</p>
-    </div>
-    <img class="demo" src="../assets/media/demo-ru.gif" width="960" height="600" alt="Демо-лента: курсор наводится на картинку и нажимает ＋; картинка и её карточка появляются в папке доски.">
+    <a class="pill pill--light" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Скачать</a>
   </div>
-</div>
+</header>
 
 <main>
-  <section id="install">
-    <div class="wrap">
-      <h2>Установка</h2>
-      <p class="intro">На Mac, Windows и Linux установка одинаковая.</p>
-      <ol class="steps">
-        <li><p>Скачайте <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip"><code>moodboard-clipper-extension.zip</code></a> и распакуйте: на Mac — двойным щелчком, в Windows — правый клик → «Извлечь все».</p></li>
-        <li><p>Перенесите папку <code>moodboard-clipper-extension</code> туда, где она будет жить, например в «Документы». Браузер загружает расширение из этой папки при каждом запуске, поэтому не удаляйте и не переименовывайте её.</p></li>
-        <li><p>Откройте <code>chrome://extensions</code> (Яндекс Браузер: <code>browser://extensions</code>) и включите «Режим разработчика». Адрес вставьте в адресную строку: по ссылке такие страницы не открываются.</p>
-          <figure><img src="../assets/media/step-ru-1.png" width="336" height="210" alt="Страница расширений с включённым режимом разработчика"><figcaption>Переключатель — в правом верхнем углу страницы расширений.</figcaption></figure></li>
-        <li><p>Нажмите «Загрузить распакованное расширение».</p>
-          <figure><img src="../assets/media/step-ru-2.png" width="336" height="210" alt="Кнопка «Загрузить распакованное расширение»"><figcaption>Кнопка появляется, когда режим разработчика включён.</figcaption></figure></li>
-        <li><p>Выберите папку <code>moodboard-clipper-extension</code>.</p>
-          <figure><img src="../assets/media/step-ru-3.png" width="336" height="210" alt="Папка moodboard-clipper-extension в «Документах», выбранная в окне выбора файлов"><figcaption>Папка <code>moodboard-clipper-extension</code> в «Документах».</figcaption></figure></li>
-      </ol>
-      <p class="intro">Появится карточка Moodboard Clipper. Закрепите значок расширения на панели, чтобы выбирать доски.</p>
-      <p class="intro">У других браузеров на Chromium свой адрес страницы расширений: <code>edge://extensions</code> в Edge, <code>brave://extensions</code> в Brave. Linux, обновление и удаление — <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/INSTALL.md"><code>INSTALL.md</code></a> (на английском).</p>
-      <p class="intro">Проверить скачанный файл: положите рядом <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a> и выполните в этой папке <code>shasum -a 256 -c SHA256SUMS.txt</code> на Mac или <code>sha256sum -c SHA256SUMS.txt</code> в Linux. В Windows откройте PowerShell в папке с архивом (в Проводнике введите <code>powershell</code> в адресной строке и нажмите Enter) и выполните <code>(Get-FileHash moodboard-clipper-extension.zip).Hash.ToLower()</code>, затем сравните ответ со строкой архива в <code>SHA256SUMS.txt</code>.</p>
-    </div>
-  </section>
+<section class="hero wrap">
+  <h1>Референсы — в папку на вашем компьютере</h1>
+  <p class="lead">Нажмите ＋ в Pinterest или Cosmos или кликните правой кнопкой по картинке на любой странице. Она ляжет в папку выбранной доски, в «Загрузках» или в вашей папке, с карточкой: откуда картинка.</p>
+  <div class="cta">
+    <a class="pill pill--light pill--lg" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Скачать</a>
+    <a class="pill pill--ghost pill--lg" href="#install">Как установить</a>
+  </div>
+  <p class="fine">Бесплатно, код открыт. Работает в Chrome и других браузерах на Chromium — на Mac, Windows и Linux.</p>
+  <div class="stage stage--hero" data-scene="hero" role="img" aria-label="Демо-лента: курсор наводится на картинку и нажимает ＋; картинка и её карточка появляются в папке доски."></div>
+</section>
 
-  <section class="alt" id="features">
-    <div class="wrap">
-      <h2>Что умеет</h2>
-      <div class="features">
-        <div class="items">
-          <div><h3>＋ в Pinterest и Cosmos</h3>
-            <p>Наведите курсор на картинку и нажмите ＋ в углу. Приходит оригинал, если сайт его отдаёт, а не превью из ленты. Когда картинка сохранится, ＋ сменится на ✓. Если она уже была в этой доске, второй раз она не скачается, а при наведении на ✓ появится подсказка «уже в доске».</p></div>
-          <div><h3>Правый клик на любой странице</h3>
-            <p>«В мудборд» есть в меню любой картинки, и расширение находит её, даже если сайт положил сверху ссылку. На Behance пункт стоит в меню страницы и берёт картинку под курсором.</p></div>
-          <div><h3>Доска — это папка</h3>
-            <p>Выберите или создайте доску в попапе расширения. Каждая доска — папка в <code>Загрузки/moodboard-inbox</code> или в папке, которую вы выберете через «Своя папка…» в попапе: откройте её в Finder или перетащите картинки прямо в Figma.</p></div>
-          <div><h3>Карточка рядом с каждой картинкой</h3>
-            <p>Небольшой JSON: страница, адрес картинки, автор, если страница его показывает, и время. <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/FORMAT.md">Поля карточки</a> (на английском).</p></div>
-        </div>
-        <figure class="popup">
-          <img src="../assets/media/popup-ru-light.png" width="640" alt="Попап: выбор доски и последние сохранения">
-          <figcaption>Попап: доски и последние 10 сохранений.</figcaption>
-        </figure>
-      </div>
-      <p class="card-lead">Карточка вроде первого сохранения из попапа, сокращённо:</p>
-      <pre class="card">{
+<section id="install" class="sec wrap">
+  <h2>Установка <span class="dim">На Mac, Windows и Linux одинаковая.</span></h2>
+  <div class="steps__track">
+    <div class="steps__sticky">
+      <ol class="steps__list">
+        <li class="is-active"><button type="button" disabled><span class="n">1</span><span class="t">Скачайте и распакуйте</span></button>
+          <div class="d"><div><p>Скачайте <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip"><code>moodboard-clipper-extension.zip</code></a> и распакуйте: на Mac — двойным щелчком, в Windows — правый клик → «Извлечь все».</p></div></div>
+          <div class="stage" data-scene="s1" role="img" aria-label="Скачайте и распакуйте"></div></li>
+        <li><button type="button" disabled><span class="n">2</span><span class="t">Перенесите папку</span></button>
+          <div class="d"><div><p>Перенесите папку <code>moodboard-clipper-extension</code> туда, где она будет жить, например в «Документы». Браузер загружает расширение из этой папки при каждом запуске, поэтому не удаляйте и не переименовывайте её.</p></div></div>
+          <div class="stage" data-scene="s2" role="img" aria-label="Перенесите папку"></div></li>
+        <li><button type="button" disabled><span class="n">3</span><span class="t">Включите режим разработчика</span></button>
+          <div class="d"><div><p>Откройте <code>chrome://extensions</code> (Яндекс Браузер: <code>browser://extensions</code>) и включите «Режим разработчика». Адрес вставьте в адресную строку: по ссылке такие страницы не открываются. Переключатель — в правом верхнем углу страницы расширений.</p></div></div>
+          <div class="stage" data-scene="s3" role="img" aria-label="Страница расширений с включённым режимом разработчика"></div></li>
+        <li><button type="button" disabled><span class="n">4</span><span class="t">Нажмите «Загрузить распакованное расширение»</span></button>
+          <div class="d"><div><p>Кнопка появляется, когда режим разработчика включён.</p></div></div>
+          <div class="stage" data-scene="s4" role="img" aria-label="Кнопка «Загрузить распакованное расширение»"></div></li>
+        <li><button type="button" disabled><span class="n">5</span><span class="t">Выберите папку</span></button>
+          <div class="d"><div><p>Выберите папку <code>moodboard-clipper-extension</code>. Появится карточка Moodboard Clipper. Закрепите значок расширения на панели, чтобы выбирать доски.</p></div></div>
+          <div class="stage" data-scene="s5" role="img" aria-label="Папка moodboard-clipper-extension в «Документах», выбранная в окне выбора файлов"></div></li>
+      </ol>
+      <div class="steps__frame"><div class="stage stage--frame" data-scene="install" role="img" aria-label="Скачайте и распакуйте"></div></div>
+      <div class="pager" aria-hidden="true"><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b></div>
+    </div>
+  </div>
+  <div class="steps__more">
+    <p>У других браузеров на Chromium свой адрес страницы расширений: <code>edge://extensions</code> в Edge, <code>brave://extensions</code> в Brave. Linux, обновление и удаление — <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/INSTALL.md"><code>INSTALL.md</code></a> (на английском).</p>
+    <p>Проверить скачанный файл: положите рядом <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a> и выполните в этой папке <code>shasum -a 256 -c SHA256SUMS.txt</code> на Mac или <code>sha256sum -c SHA256SUMS.txt</code> в Linux. В Windows откройте PowerShell в папке с архивом (в Проводнике введите <code>powershell</code> в адресной строке и нажмите Enter) и выполните <code>(Get-FileHash moodboard-clipper-extension.zip).Hash.ToLower()</code>, затем сравните ответ со строкой архива в <code>SHA256SUMS.txt</code>.</p>
+  </div>
+</section>
+
+<section id="features" class="sec wrap">
+  <h2>Что умеет</h2>
+  <div class="fgrid">
+    <article class="fcard">
+      <div class="stage" data-scene="f1" role="img" aria-label="＋ в Pinterest и Cosmos"></div>
+      <div class="fcard__t"><h3>＋ в Pinterest и Cosmos</h3>
+        <p>Наведите курсор на картинку и нажмите ＋ в углу. Приходит оригинал, если сайт его отдаёт, а не превью из ленты. Когда картинка сохранится, ＋ сменится на ✓. Если она уже была в этой доске, второй раз она не скачается, а при наведении на ✓ появится подсказка «уже в доске».</p></div>
+    </article>
+    <article class="fcard">
+      <div class="stage" data-scene="f2" role="img" aria-label="Правый клик на любой странице"></div>
+      <div class="fcard__t"><h3>Правый клик на любой странице</h3>
+        <p>«В мудборд» есть в меню любой картинки, и расширение находит её, даже если сайт положил сверху ссылку. На Behance пункт стоит в меню страницы и берёт картинку под курсором.</p></div>
+    </article>
+    <article class="fcard">
+      <div class="stage" data-scene="f3" role="img" aria-label="Попап: выбор доски и последние сохранения"></div>
+      <div class="fcard__t"><h3>Доска — это папка</h3>
+        <p>Выберите или создайте доску в попапе расширения. Каждая доска — папка в <code>Загрузки/moodboard-inbox</code> или в папке, которую вы выберете через «Своя папка…» в попапе: откройте её в Finder или перетащите картинки прямо в Figma.</p>
+        <p class="cap">Попап: доски и последние 10 сохранений.</p></div>
+    </article>
+    <article class="fcard">
+      <div class="stage" data-scene="f4" role="img" aria-label="Карточка рядом с каждой картинкой"></div>
+      <div class="fcard__t"><h3>Карточка рядом с каждой картинкой</h3>
+        <p>Небольшой JSON: страница, адрес картинки, автор, если страница его показывает, и время. <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/FORMAT.md">Поля карточки</a> (на английском).</p></div>
+    </article>
+  </div>
+  <p class="card-lead">Карточка вроде первого сохранения из попапа, сокращённо:</p>
+  <pre class="card">{
   "schema": "moodboard-clip/1",
   "board": "concept-a",
   "site": "pinterest",
   "page_url": "https://www.pinterest.com/pin/100000000000000001/",
   "asset_url": "https://i.pinimg.com/originals/00/11/22/example.jpg",
   "file": "20261018T100500Z-pinterest-100000000000000001.jpg",
-  "title": "Concrete stair in morning light",
+  "title": "Portrait at night, pink neon",
   "author": "unknown",
   "saved_at": "2026-10-18T10:05:00Z"
 }</pre>
-    </div>
-  </section>
+</section>
 
-  <section id="privacy">
-    <div class="wrap">
-      <h2>Доски остаются на вашем компьютере</h2>
-      <p class="intro">За расширением нет сервера, аккаунт заводить не нужно. Картинку оно скачивает так же, как скачал бы браузер, а список досок хранит в самом браузере. Зачем ему каждое разрешение:</p>
-      <table class="perms">
-        <tr><th><code>downloads</code></th><td>Сохранить картинку и её карточку в папку доски.</td></tr>
-        <tr><th><code>downloads.ui</code>, <code>alarms</code></th><td>Спрятать всплывающую панель загрузок, пока идёт сохранение, и вернуть её через минуту, если браузер усыпил расширение на полпути.</td></tr>
-        <tr><th><code>storage</code></th><td>Доски, последние сохранения и проверка повторов.</td></tr>
-        <tr><th><code>contextMenus</code></th><td>Пункт «В мудборд» в меню правого клика.</td></tr>
-        <tr><th><code>activeTab</code>, <code>scripting</code></th><td>После правого клика найти картинку под ссылкой, которая лежит поверх неё, — только в этой вкладке и только в этот момент.</td></tr>
-        <tr><th>Pinterest, Cosmos, Behance</th><td>Кнопка ＋ в Pinterest и Cosmos. Пункт в меню страницы на Behance: небольшой скрипт на страницах Behance запоминает, какая картинка под курсором при каждом правом клике. Несколько коротких запросов к серверам картинок Pinterest и Cosmos, чтобы найти оригинальный размер.</td></tr>
-        <tr><th><code>offscreen</code></th><td>Скрытая страница расширения, которая держит открытой вашу папку, чтобы туда можно было записывать сохранения. Она есть, только пока вы выбрали свою папку.</td></tr>
-        <tr><th>Все сайты (необязательно)</th><td>При установке не выдаётся. Спрашивается, только если вы нажмёте «Разрешить на всех сайтах»: это предлагается после сохранения в вашу папку с сайта, который не отдаёт картинку расширению. Используется только для загрузки сохраняемых вами картинок, без cookies.</td></tr>
-      </table>
-      <p class="intro">Что расширение хранит и какие запросы делает — в <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/PRIVACY.md">полном тексте</a> (на английском).</p>
-    </div>
-  </section>
+<section id="privacy" class="sec wrap">
+  <h2>Доски остаются на вашем компьютере. <span class="dim">За расширением нет сервера, аккаунт заводить не нужно.</span></h2>
+  <p class="intro">Картинку оно скачивает так же, как скачал бы браузер, а список досок хранит в самом браузере. Зачем ему каждое разрешение:</p>
+  <table class="perms">
+    <tr><th><code>downloads</code></th><td>Сохранить картинку и её карточку в папку доски.</td></tr>
+    <tr><th><code>downloads.ui</code>, <code>alarms</code></th><td>Спрятать всплывающую панель загрузок, пока идёт сохранение, и вернуть её через минуту, если браузер усыпил расширение на полпути.</td></tr>
+    <tr><th><code>storage</code></th><td>Доски, последние сохранения и проверка повторов.</td></tr>
+    <tr><th><code>contextMenus</code></th><td>Пункт «В мудборд» в меню правого клика.</td></tr>
+    <tr><th><code>activeTab</code>, <code>scripting</code></th><td>После правого клика найти картинку под ссылкой, которая лежит поверх неё, — только в этой вкладке и только в этот момент.</td></tr>
+    <tr><th>Pinterest, Cosmos, Behance</th><td>Кнопка ＋ в Pinterest и Cosmos. Пункт в меню страницы на Behance: небольшой скрипт на страницах Behance запоминает, какая картинка под курсором при каждом правом клике. Несколько коротких запросов к серверам картинок Pinterest и Cosmos, чтобы найти оригинальный размер.</td></tr>
+    <tr><th><code>offscreen</code></th><td>Скрытая страница расширения, которая держит открытой вашу папку, чтобы туда можно было записывать сохранения. Она есть, только пока вы выбрали свою папку.</td></tr>
+    <tr><th>Все сайты (необязательно)</th><td>При установке не выдаётся. Спрашивается, только если вы нажмёте «Разрешить на всех сайтах»: это предлагается после сохранения в вашу папку с сайта, который не отдаёт картинку расширению. Используется только для загрузки сохраняемых вами картинок, без cookies.</td></tr>
+  </table>
+  <p class="after">Что расширение хранит и какие запросы делает — в <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/PRIVACY.md">полном тексте</a> (на английском).</p>
+</section>
 
-  <section class="alt" id="faq">
-    <div class="wrap">
-      <h2>Вопросы</h2>
-      <div class="faq">
-        <details>
-          <summary>Расширение есть в Chrome Web Store?</summary>
-          <p>Пока нет. Браузер загружает расширение в режиме разработчика из папки, которую можно открыть, а весь его код лежит на GitHub.</p>
-        </details>
-        <details>
-          <summary>Как обновить?</summary>
-          <p>Новая версия ставится поверх старой. Распакуйте новый архив и положите папку на место прежней — с тем же именем и в то же место (Finder и Проводник предложат заменить). Затем нажмите стрелку обновления на карточке Moodboard Clipper и перезагрузите открытые вкладки Pinterest, Cosmos и Behance. Если загрузить папку из другого места, браузер поставит расширение заново, без списка досок, выбранной доски, счётчиков, последних сохранений и данных для проверки повторов; картинки в <code>Загрузки/moodboard-inbox</code> останутся. Расширение само обновления не проверяет: новые версии появляются на <a href="https://github.com/georgespelllens/moodboard-clipper/releases">странице Releases</a>.</p>
-        </details>
-        <details>
-          <summary>Как удалить?</summary>
-          <p>Нажмите «Удалить» на карточке Moodboard Clipper на странице расширений. Затем, если хотите, удалите папку расширения. Сохранённые картинки в <code>Загрузки/moodboard-inbox</code> останутся.</p>
-        </details>
-        <details>
-          <summary>Можно ли использовать сохранённые картинки?</summary>
-          <p>Сохранить картинку не значит получить право её использовать: она по-прежнему принадлежит автору. Прежде чем публиковать или продавать то, что из неё сделано, проверьте условия автора.</p>
-        </details>
-      </div>
-    </div>
-  </section>
+<section id="faq" class="sec wrap">
+  <h2>Вопросы</h2>
+  <div class="faq">
+    <details>
+      <summary>Расширение есть в Chrome Web Store?</summary>
+      <p>Пока нет. Браузер загружает расширение в режиме разработчика из папки, которую можно открыть, а весь его код лежит на GitHub.</p>
+    </details>
+    <details>
+      <summary>Как обновить?</summary>
+      <p>Новая версия ставится поверх старой. Распакуйте новый архив и положите папку на место прежней — с тем же именем и в то же место (Finder и Проводник предложат заменить). Затем нажмите стрелку обновления на карточке Moodboard Clipper и перезагрузите открытые вкладки Pinterest, Cosmos и Behance. Если загрузить папку из другого места, браузер поставит расширение заново, без списка досок, выбранной доски, счётчиков, последних сохранений и данных для проверки повторов; картинки в <code>Загрузки/moodboard-inbox</code> останутся. Расширение само обновления не проверяет: новые версии появляются на <a href="https://github.com/georgespelllens/moodboard-clipper/releases">странице Releases</a>.</p>
+    </details>
+    <details>
+      <summary>Как удалить?</summary>
+      <p>Нажмите «Удалить» на карточке Moodboard Clipper на странице расширений. Затем, если хотите, удалите папку расширения. Сохранённые картинки в <code>Загрузки/moodboard-inbox</code> останутся.</p>
+    </details>
+    <details>
+      <summary>Можно ли использовать сохранённые картинки?</summary>
+      <p>Сохранить картинку не значит получить право её использовать: она по-прежнему принадлежит автору. Прежде чем публиковать или продавать то, что из неё сделано, проверьте условия автора.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final wrap">
+  <h2>Референсы — в папку на вашем компьютере</h2>
+  <div class="cta">
+    <a class="pill pill--light pill--lg" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Скачать</a>
+    <a class="pill pill--ghost pill--lg" href="https://github.com/georgespelllens/moodboard-clipper">GitHub</a>
+  </div>
+  <p class="fine">Бесплатно, код открыт.</p>
+</section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="by">by <img src="../assets/media/wordmark.svg" width="108" height="16" alt="SPELLLENS"></div>
-    <p><a href="https://github.com/georgespelllens/moodboard-clipper">Исходники на GitHub</a>. Код — под <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/LICENSE">лицензией MIT</a>. Картинки демо нарисованы для проекта, лицензия та же. Шрифт — Onest, <a href="../assets/fonts/OFL.txt">SIL Open Font License</a>. Названия сайтов и браузеров, упомянутых здесь, — товарные знаки их владельцев; проект с ними не связан.</p>
+    <div class="by">by <img src="../assets/media/wordmark-white.svg" width="108" height="16" alt="SPELLLENS"></div>
+    <p><a href="https://github.com/georgespelllens/moodboard-clipper">Исходники на GitHub</a>. Код — под <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/LICENSE">лицензией MIT</a>. Картинки демо нарисованы для проекта, лицензия та же. Арт в анимированных сценах — SPELLLENS, MIT на него не распространяется: все права защищены. Шрифты: SPELLLENS в заголовках, все права защищены; Onest в тексте, <a href="../assets/fonts/OFL.txt">SIL Open Font License</a>. Названия сайтов и браузеров, упомянутых здесь, — товарные знаки их владельцев; проект с ними не связан.</p>
   </div>
 </footer>
+<script src="../assets/scenes.js" defer></script>
+<script src="../assets/site.js" defer></script>
 </body>
 </html>

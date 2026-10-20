@@ -4,7 +4,7 @@
 
 An extension for Chrome and other Chromium browsers. It saves pictures from Pinterest, Cosmos and any web page into a folder on your computer: a folder per board, and next to each picture a card with the page it came from, the author when the page shows one, and the time.
 
-**[Download](https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip)** · [How to install](#install) · [Site](https://georgespelllens.github.io/moodboard-clipper/) · [Русский](README.ru.md)
+**[Download](https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip)** · [How to install](#install) · [Site](https://spelllens.ru/moodboard-clipper/) · [Русский](README.ru.md)
 
 <img src="site/assets/media/demo-en.gif" alt="A demo feed: the cursor hovers a picture, clicks ＋, and the picture and its card appear in the board folder" width="960">
 
@@ -90,7 +90,7 @@ Ideas, not code, came from [extesy/hoverzoom](https://github.com/extesy/hoverzoo
 
 ## License
 
-Code and the demo pictures: [MIT](LICENSE), © SPELLLENS. The pictures in `demo/works/`, which also appear in the demo GIF and on the cover, are drawn by [`demo/draw-works.mjs`](demo/draw-works.mjs). The site's font, Onest, is under the SIL Open Font License ([`site/assets/fonts/OFL.txt`](site/assets/fonts/OFL.txt)). Names of the sites and browsers mentioned here are trademarks of their owners; this project is not affiliated with them.
+Code and the demo pictures: [MIT](LICENSE), © SPELLLENS. The pictures in `demo/works/`, which also appear in the demo GIF and on the cover, are drawn by [`demo/draw-works.mjs`](demo/draw-works.mjs). Not covered by the MIT license, all rights reserved: the art in the animated scenes of the site ([`site/assets/scenes/NOTICE.txt`](site/assets/scenes/NOTICE.txt)) and the SPELLLENS typeface of its headings ([`site/assets/fonts/NOTICE.txt`](site/assets/fonts/NOTICE.txt)). The text font of the site, Onest, is under the SIL Open Font License ([`site/assets/fonts/OFL.txt`](site/assets/fonts/OFL.txt)). Names of the sites and browsers mentioned here are trademarks of their owners; this project is not affiliated with them.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="site/assets/media/wordmark-white.svg">

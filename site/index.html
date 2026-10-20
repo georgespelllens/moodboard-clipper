@@ -5,148 +5,177 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moodboard Clipper by SPELLLENS — save references into a folder</title>
 <meta name="description" content="A Chrome extension that saves pictures from Pinterest, Cosmos and any page into a folder on your computer, with a card for each picture. Free, open source.">
-<link rel="canonical" href="https://georgespelllens.github.io/moodboard-clipper/">
-<link rel="alternate" hreflang="en" href="https://georgespelllens.github.io/moodboard-clipper/">
-<link rel="alternate" hreflang="ru" href="https://georgespelllens.github.io/moodboard-clipper/ru/">
+<link rel="canonical" href="https://spelllens.ru/moodboard-clipper/">
+<link rel="alternate" hreflang="en" href="https://spelllens.ru/moodboard-clipper/">
+<link rel="alternate" hreflang="ru" href="https://spelllens.ru/moodboard-clipper/ru/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Moodboard Clipper by SPELLLENS">
 <meta property="og:description" content="Save pictures from Pinterest, Cosmos and any page into a folder on your computer.">
-<meta property="og:url" content="https://georgespelllens.github.io/moodboard-clipper/">
-<meta property="og:image" content="https://georgespelllens.github.io/moodboard-clipper/assets/media/cover.jpg">
+<meta property="og:url" content="https://spelllens.ru/moodboard-clipper/">
+<meta property="og:image" content="https://spelllens.ru/moodboard-clipper/assets/media/cover.jpg">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/media/favicon-32.png">
 <link rel="preload" href="assets/fonts/onest-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/spelllens-9.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="top">
-  <header class="wrap bar">
-    <a class="brand" href="index.html"><img src="assets/media/icon-128.png" alt="" width="36" height="36">Moodboard Clipper</a>
-    <nav>
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="28" fill="#fff"/><rect x="22" y="22" width="38" height="50" rx="7" fill="#000"/><rect x="22" y="78" width="38" height="28" rx="7" fill="#000" opacity=".3"/><rect x="68" y="22" width="38" height="30" rx="7" fill="#000" opacity=".3"/><rect x="68" y="58" width="38" height="48" rx="7" fill="#000"/><path d="M87 71v22M76 82h22" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+      <span>Moodboard Clipper</span>
+    </a>
+    <nav class="nav">
+      <a class="wide" href="#install">Install</a>
       <a class="wide" href="#privacy">Privacy</a>
       <a class="wide" href="https://github.com/georgespelllens/moodboard-clipper">GitHub</a>
       <a href="ru/index.html" hreflang="ru" lang="ru">По-русски</a>
     </nav>
-  </header>
-  <div class="wrap hero">
-    <div>
-      <h1>Save references into a folder on your computer</h1>
-      <p class="lead">Click ＋ on Pinterest or Cosmos, or right-click a picture on any page. It lands in the folder of the board you chose, in Downloads or in a folder of your own, with a card that says where it came from.</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Download</a>
-        <a class="button secondary" href="#install">How to install</a>
-      </div>
-      <p class="note">Free, the code is open. Works in Chrome and other Chromium browsers on Mac, Windows and Linux.</p>
-    </div>
-    <img class="demo" src="assets/media/demo-en.gif" width="960" height="600" alt="A demo feed: the cursor hovers a picture and clicks ＋; the picture and its card appear in the board folder.">
+    <a class="pill pill--light" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Download</a>
   </div>
-</div>
+</header>
 
 <main>
-  <section id="install">
-    <div class="wrap">
-      <h2>Install</h2>
-      <p class="intro">The same on Mac, Windows and Linux.</p>
-      <ol class="steps">
-        <li><p>Download <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip"><code>moodboard-clipper-extension.zip</code></a> and unzip it: double-click it on a Mac; on Windows, right-click it and choose Extract All.</p></li>
-        <li><p>Move the <code>moodboard-clipper-extension</code> folder to where it will stay, for example Documents. The browser loads the extension from this folder every time it starts, so don't delete or rename it.</p></li>
-        <li><p>Open <code>chrome://extensions</code> (Yandex Browser: <code>browser://extensions</code>) and turn on Developer mode. Paste the address into the address bar: pages like this don't open from links.</p>
-          <figure><img src="assets/media/step-en-1.png" width="336" height="210" alt="The extensions page with Developer mode switched on"><figcaption>The switch is in the top right corner of the extensions page.</figcaption></figure></li>
-        <li><p>Click Load unpacked.</p>
-          <figure><img src="assets/media/step-en-2.png" width="336" height="210" alt="The Load unpacked button"><figcaption>The button appears once Developer mode is on.</figcaption></figure></li>
-        <li><p>Choose the <code>moodboard-clipper-extension</code> folder.</p>
-          <figure><img src="assets/media/step-en-3.png" width="336" height="210" alt="The folder moodboard-clipper-extension in Documents, chosen in the file dialog"><figcaption>The folder <code>moodboard-clipper-extension</code> in Documents.</figcaption></figure></li>
-      </ol>
-      <p class="intro">The Moodboard Clipper card appears. Pin the extension's icon to the toolbar to pick boards.</p>
-      <p class="intro">Other Chromium browsers have their own address for the extensions page: <code>edge://extensions</code> in Edge, <code>brave://extensions</code> in Brave. Linux, updating and removing: <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/INSTALL.md"><code>INSTALL.md</code></a>.</p>
-      <p class="intro">To check the download, put <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a> next to the zip and run <code>shasum -a 256 -c SHA256SUMS.txt</code> in that folder on a Mac, or <code>sha256sum -c SHA256SUMS.txt</code> on Linux. On Windows, open PowerShell in the folder with the zip (in File Explorer, type <code>powershell</code> in the address bar and press Enter) and run <code>(Get-FileHash moodboard-clipper-extension.zip).Hash.ToLower()</code>, then compare the result with the zip's line in <code>SHA256SUMS.txt</code>.</p>
-    </div>
-  </section>
+<section class="hero wrap">
+  <h1>Save references into a folder on your computer</h1>
+  <p class="lead">Click ＋ on Pinterest or Cosmos, or right-click a picture on any page. It lands in the folder of the board you chose, in Downloads or in a folder of your own, with a card that says where it came from.</p>
+  <div class="cta">
+    <a class="pill pill--light pill--lg" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Download</a>
+    <a class="pill pill--ghost pill--lg" href="#install">How to install</a>
+  </div>
+  <p class="fine">Free, the code is open. Works in Chrome and other Chromium browsers on Mac, Windows and Linux.</p>
+  <div class="stage stage--hero" data-scene="hero" role="img" aria-label="A demo feed: the cursor hovers a picture and clicks ＋; the picture and its card appear in the board folder."></div>
+</section>
 
-  <section class="alt" id="features">
-    <div class="wrap">
-      <h2>What it does</h2>
-      <div class="features">
-        <div class="items">
-          <div><h3>＋ on Pinterest and Cosmos</h3>
-            <p>Hover over a picture and click ＋ in its corner. You get the original size where the site serves it, not the thumbnail from the feed. When the picture is saved, ＋ turns into ✓. If it was already in this board, it is not downloaded again, and the tooltip on ✓ says so.</p></div>
-          <div><h3>Right-click on any page</h3>
-            <p>Save to moodboard is in the menu of every picture, and it finds the picture under a link a site lays over it. On Behance the item sits in the page menu and takes the picture under the cursor.</p></div>
-          <div><h3>Boards are folders</h3>
-            <p>Pick or create a board in the extension's popup. Each board is a folder in <code>Downloads/moodboard-inbox</code>, or in a folder you pick with Own folder… in the popup: open it in Finder or drag the pictures straight into Figma.</p></div>
-          <div><h3>A card next to every picture</h3>
-            <p>A small JSON file with the page, the picture's address, the author when the page shows one, and the time. <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/FORMAT.md">Its fields</a>.</p></div>
-        </div>
-        <figure class="popup">
-          <img src="assets/media/popup-en-light.png" width="640" alt="The popup: the board picker and the last saves">
-          <figcaption>The popup: boards and the last 10 saves.</figcaption>
-        </figure>
-      </div>
-      <p class="card-lead">A card like the first save in the popup, shortened:</p>
-      <pre class="card">{
+<section id="install" class="sec wrap">
+  <h2>Install <span class="dim">The same on Mac, Windows and Linux.</span></h2>
+  <div class="steps__track">
+    <div class="steps__sticky">
+      <ol class="steps__list">
+        <li class="is-active"><button type="button" disabled><span class="n">1</span><span class="t">Download and unzip</span></button>
+          <div class="d"><div><p>Download <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip"><code>moodboard-clipper-extension.zip</code></a> and unzip it: double-click it on a Mac; on Windows, right-click it and choose Extract All.</p></div></div>
+          <div class="stage" data-scene="s1" role="img" aria-label="Download and unzip"></div></li>
+        <li><button type="button" disabled><span class="n">2</span><span class="t">Move the folder</span></button>
+          <div class="d"><div><p>Move the <code>moodboard-clipper-extension</code> folder to where it will stay, for example Documents. The browser loads the extension from this folder every time it starts, so don't delete or rename it.</p></div></div>
+          <div class="stage" data-scene="s2" role="img" aria-label="Move the folder"></div></li>
+        <li><button type="button" disabled><span class="n">3</span><span class="t">Turn on Developer mode</span></button>
+          <div class="d"><div><p>Open <code>chrome://extensions</code> (Yandex Browser: <code>browser://extensions</code>) and turn on Developer mode. Paste the address into the address bar: pages like this don't open from links. The switch is in the top right corner of the extensions page.</p></div></div>
+          <div class="stage" data-scene="s3" role="img" aria-label="The extensions page with Developer mode switched on"></div></li>
+        <li><button type="button" disabled><span class="n">4</span><span class="t">Click Load unpacked</span></button>
+          <div class="d"><div><p>The button appears once Developer mode is on.</p></div></div>
+          <div class="stage" data-scene="s4" role="img" aria-label="The Load unpacked button"></div></li>
+        <li><button type="button" disabled><span class="n">5</span><span class="t">Choose the folder</span></button>
+          <div class="d"><div><p>Choose the <code>moodboard-clipper-extension</code> folder. The Moodboard Clipper card appears. Pin the extension's icon to the toolbar to pick boards.</p></div></div>
+          <div class="stage" data-scene="s5" role="img" aria-label="The folder moodboard-clipper-extension in Documents, chosen in the file dialog"></div></li>
+      </ol>
+      <div class="steps__frame"><div class="stage stage--frame" data-scene="install" role="img" aria-label="Download and unzip"></div></div>
+      <div class="pager" aria-hidden="true"><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b></div>
+    </div>
+  </div>
+  <div class="steps__more">
+    <p>Other Chromium browsers have their own address for the extensions page: <code>edge://extensions</code> in Edge, <code>brave://extensions</code> in Brave. Linux, updating and removing: <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/INSTALL.md"><code>INSTALL.md</code></a>.</p>
+    <p>To check the download, put <a href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a> next to the zip and run <code>shasum -a 256 -c SHA256SUMS.txt</code> in that folder on a Mac, or <code>sha256sum -c SHA256SUMS.txt</code> on Linux. On Windows, open PowerShell in the folder with the zip (in File Explorer, type <code>powershell</code> in the address bar and press Enter) and run <code>(Get-FileHash moodboard-clipper-extension.zip).Hash.ToLower()</code>, then compare the result with the zip's line in <code>SHA256SUMS.txt</code>.</p>
+  </div>
+</section>
+
+<section id="features" class="sec wrap">
+  <h2>What it does</h2>
+  <div class="fgrid">
+    <article class="fcard">
+      <div class="stage" data-scene="f1" role="img" aria-label="＋ on Pinterest and Cosmos"></div>
+      <div class="fcard__t"><h3>＋ on Pinterest and Cosmos</h3>
+        <p>Hover over a picture and click ＋ in its corner. You get the original size where the site serves it, not the thumbnail from the feed. When the picture is saved, ＋ turns into ✓. If it was already in this board, it is not downloaded again, and the tooltip on ✓ says so.</p></div>
+    </article>
+    <article class="fcard">
+      <div class="stage" data-scene="f2" role="img" aria-label="Right-click on any page"></div>
+      <div class="fcard__t"><h3>Right-click on any page</h3>
+        <p>Save to moodboard is in the menu of every picture, and it finds the picture under a link a site lays over it. On Behance the item sits in the page menu and takes the picture under the cursor.</p></div>
+    </article>
+    <article class="fcard">
+      <div class="stage" data-scene="f3" role="img" aria-label="The popup: the board picker and the last saves"></div>
+      <div class="fcard__t"><h3>Boards are folders</h3>
+        <p>Pick or create a board in the extension's popup. Each board is a folder in <code>Downloads/moodboard-inbox</code>, or in a folder you pick with Own folder… in the popup: open it in Finder or drag the pictures straight into Figma.</p>
+        <p class="cap">The popup: boards and the last 10 saves.</p></div>
+    </article>
+    <article class="fcard">
+      <div class="stage" data-scene="f4" role="img" aria-label="A card next to every picture"></div>
+      <div class="fcard__t"><h3>A card next to every picture</h3>
+        <p>A small JSON file with the page, the picture's address, the author when the page shows one, and the time. <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/FORMAT.md">Its fields</a>.</p></div>
+    </article>
+  </div>
+  <p class="card-lead">A card like the first save in the popup, shortened:</p>
+  <pre class="card">{
   "schema": "moodboard-clip/1",
   "board": "concept-a",
   "site": "pinterest",
   "page_url": "https://www.pinterest.com/pin/100000000000000001/",
   "asset_url": "https://i.pinimg.com/originals/00/11/22/example.jpg",
   "file": "20261018T100500Z-pinterest-100000000000000001.jpg",
-  "title": "Concrete stair in morning light",
+  "title": "Portrait at night, pink neon",
   "author": "unknown",
   "saved_at": "2026-10-18T10:05:00Z"
 }</pre>
-    </div>
-  </section>
+</section>
 
-  <section id="privacy">
-    <div class="wrap">
-      <h2>Your boards stay on your computer</h2>
-      <p class="intro">There is no server behind it and no account to create. The extension downloads the picture the way the browser would, and keeps the list of boards in the browser. Here is what each permission is for.</p>
-      <table class="perms">
-        <tr><th><code>downloads</code></th><td>Saving the picture and its card into the board folder.</td></tr>
-        <tr><th><code>downloads.ui</code>, <code>alarms</code></th><td>Hiding the download bubble while a save runs, and bringing it back a minute later if the browser paused the extension half way.</td></tr>
-        <tr><th><code>storage</code></th><td>Boards, the last saves and the repeat check.</td></tr>
-        <tr><th><code>contextMenus</code></th><td>The Save to moodboard item in the right-click menu.</td></tr>
-        <tr><th><code>activeTab</code>, <code>scripting</code></th><td>After a right click, finding the picture under a link laid over it, only in that tab and only then.</td></tr>
-        <tr><th>Pinterest, Cosmos, Behance</th><td>The ＋ button on Pinterest and Cosmos. The page menu on Behance, where a small script notes which picture is under the cursor at each right click. A few small requests to the image servers of Pinterest and Cosmos to find the original size.</td></tr>
-        <tr><th><code>offscreen</code></th><td>A hidden page of the extension that keeps your own folder open so saves can be written into it. It exists only while you have chosen one.</td></tr>
-        <tr><th>All sites (optional)</th><td>Not given at install. Asked only if you click Allow on all sites, offered after a save into your own folder from a site that does not give its picture to the extension. Used only to fetch the pictures you save, without cookies.</td></tr>
-      </table>
-      <p class="intro">What it stores and which requests it makes: <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/PRIVACY.md">the full text</a>.</p>
-    </div>
-  </section>
+<section id="privacy" class="sec wrap">
+  <h2>Your boards stay on your computer. <span class="dim">There is no server behind it and no account to create.</span></h2>
+  <p class="intro">The extension downloads the picture the way the browser would, and keeps the list of boards in the browser. Here is what each permission is for.</p>
+  <table class="perms">
+    <tr><th><code>downloads</code></th><td>Saving the picture and its card into the board folder.</td></tr>
+    <tr><th><code>downloads.ui</code>, <code>alarms</code></th><td>Hiding the download bubble while a save runs, and bringing it back a minute later if the browser paused the extension half way.</td></tr>
+    <tr><th><code>storage</code></th><td>Boards, the last saves and the repeat check.</td></tr>
+    <tr><th><code>contextMenus</code></th><td>The Save to moodboard item in the right-click menu.</td></tr>
+    <tr><th><code>activeTab</code>, <code>scripting</code></th><td>After a right click, finding the picture under a link laid over it, only in that tab and only then.</td></tr>
+    <tr><th>Pinterest, Cosmos, Behance</th><td>The ＋ button on Pinterest and Cosmos. The page menu on Behance, where a small script notes which picture is under the cursor at each right click. A few small requests to the image servers of Pinterest and Cosmos to find the original size.</td></tr>
+    <tr><th><code>offscreen</code></th><td>A hidden page of the extension that keeps your own folder open so saves can be written into it. It exists only while you have chosen one.</td></tr>
+    <tr><th>All sites (optional)</th><td>Not given at install. Asked only if you click Allow on all sites, offered after a save into your own folder from a site that does not give its picture to the extension. Used only to fetch the pictures you save, without cookies.</td></tr>
+  </table>
+  <p class="after">What it stores and which requests it makes: <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/docs/PRIVACY.md">the full text</a>.</p>
+</section>
 
-  <section class="alt" id="faq">
-    <div class="wrap">
-      <h2>Questions</h2>
-      <div class="faq">
-        <details>
-          <summary>Is it in the Chrome Web Store?</summary>
-          <p>Not yet. The browser loads it in developer mode from a folder you can open, and every line of it is on GitHub.</p>
-        </details>
-        <details>
-          <summary>How do I update?</summary>
-          <p>A new version is installed over the old one. Unzip the new archive and put its folder in place of the old one, with the same name in the same place (Finder and File Explorer will offer to replace it). Then click the reload arrow on the Moodboard Clipper card and reload open Pinterest, Cosmos and Behance tabs. If you load the folder from another place, the browser installs the extension as a new one, without the list of boards, the chosen board, the save counts, the last saves and the repeat-check data; the pictures in <code>Downloads/moodboard-inbox</code> stay. The extension does not check for updates by itself: new versions appear on the <a href="https://github.com/georgespelllens/moodboard-clipper/releases">Releases page</a>.</p>
-        </details>
-        <details>
-          <summary>How do I remove it?</summary>
-          <p>Click Remove on the Moodboard Clipper card on the extensions page. Then delete the folder if you like. Saved pictures in <code>Downloads/moodboard-inbox</code> stay.</p>
-        </details>
-        <details>
-          <summary>Can I use the pictures I save?</summary>
-          <p>Saving a picture does not give you the right to use it: it still belongs to its author. Check the author's terms before you publish or sell anything made from it.</p>
-        </details>
-      </div>
-    </div>
-  </section>
+<section id="faq" class="sec wrap">
+  <h2>Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Is it in the Chrome Web Store?</summary>
+      <p>Not yet. The browser loads it in developer mode from a folder you can open, and every line of it is on GitHub.</p>
+    </details>
+    <details>
+      <summary>How do I update?</summary>
+      <p>A new version is installed over the old one. Unzip the new archive and put its folder in place of the old one, with the same name in the same place (Finder and File Explorer will offer to replace it). Then click the reload arrow on the Moodboard Clipper card and reload open Pinterest, Cosmos and Behance tabs. If you load the folder from another place, the browser installs the extension as a new one, without the list of boards, the chosen board, the save counts, the last saves and the repeat-check data; the pictures in <code>Downloads/moodboard-inbox</code> stay. The extension does not check for updates by itself: new versions appear on the <a href="https://github.com/georgespelllens/moodboard-clipper/releases">Releases page</a>.</p>
+    </details>
+    <details>
+      <summary>How do I remove it?</summary>
+      <p>Click Remove on the Moodboard Clipper card on the extensions page. Then delete the folder if you like. Saved pictures in <code>Downloads/moodboard-inbox</code> stay.</p>
+    </details>
+    <details>
+      <summary>Can I use the pictures I save?</summary>
+      <p>Saving a picture does not give you the right to use it: it still belongs to its author. Check the author's terms before you publish or sell anything made from it.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final wrap">
+  <h2>Save references into a folder on your computer</h2>
+  <div class="cta">
+    <a class="pill pill--light pill--lg" href="https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip">Download</a>
+    <a class="pill pill--ghost pill--lg" href="https://github.com/georgespelllens/moodboard-clipper">GitHub</a>
+  </div>
+  <p class="fine">Free, the code is open.</p>
+</section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="by">by <img src="assets/media/wordmark.svg" width="108" height="16" alt="SPELLLENS"></div>
-    <p><a href="https://github.com/georgespelllens/moodboard-clipper">Source on GitHub</a>. Code under the <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/LICENSE">MIT license</a>. The demo pictures are drawn for this project and are under the same license. Font: Onest, <a href="assets/fonts/OFL.txt">SIL Open Font License</a>. Names of the sites and browsers mentioned here are trademarks of their owners; this project is not affiliated with them.</p>
+    <div class="by">by <img src="assets/media/wordmark-white.svg" width="108" height="16" alt="SPELLLENS"></div>
+    <p><a href="https://github.com/georgespelllens/moodboard-clipper">Source on GitHub</a>. Code under the <a href="https://github.com/georgespelllens/moodboard-clipper/blob/main/LICENSE">MIT license</a>. The demo pictures are drawn for this project and are under the same license. The art in the animated scenes is by SPELLLENS and is not covered by it: all rights reserved. Fonts: SPELLLENS in the headings, all rights reserved; Onest in the text, <a href="assets/fonts/OFL.txt">SIL Open Font License</a>. Names of the sites and browsers mentioned here are trademarks of their owners; this project is not affiliated with them.</p>
   </div>
 </footer>
+<script src="assets/scenes.js" defer></script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 
 Расширение для Chrome и других браузеров на Chromium. Сохраняет картинки из Pinterest, Cosmos и с любых страниц в папку на компьютере: у каждой доски своя папка, рядом с каждой картинкой карточка — откуда она, кто автор (если страница его показывает) и когда сохранена.
 
-**[Скачать](https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip)** · [Как установить](#установка) · [Сайт](https://georgespelllens.github.io/moodboard-clipper/ru/) · [In English](README.md)
+**[Скачать](https://github.com/georgespelllens/moodboard-clipper/releases/latest/download/moodboard-clipper-extension.zip)** · [Как установить](#установка) · [Сайт](https://spelllens.ru/moodboard-clipper/ru/) · [In English](README.md)
 
 <img src="site/assets/media/demo-ru.gif" alt="Демо-лента: курсор наводится на картинку, нажимает ＋, картинка и её карточка появляются в папке доски" width="960">
 
